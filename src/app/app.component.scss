@@ -1,0 +1,247 @@
+$imagen-card: url(../assets/img/girl.jpg);
+$background-card: #fff;
+
+.card {
+    background: $background-card;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+
+    p {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .card-image {
+        background-image: $imagen-card;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card-data {
+        p {
+            font-weight: bold;
+        }
+
+        span {
+            color: gray;
+            font-size: 12px;
+        }
+
+        .logo img {
+            width: 80px;
+        }
+
+    }
+}
+
+section>article {
+    margin: 50px 25px;
+}
+
+main {
+    display: flex;
+    padding: 0px 85px;
+}
+
+main section {
+    margin: 10px;
+    width: 260px;
+
+}
+
+main section:nth-of-type(1) {
+    flex-grow: 1;
+}
+
+main section:nth-of-type(2) {
+    flex-grow: 6;
+}
+
+main section:nth-of-type(3) {
+    flex-grow: 1;
+}
+
+article {
+    position: relative;
+}
+
+.card-vertical {
+    text-align: center;
+    padding-bottom: 10px;
+
+    .card-image {
+        width: inherit;
+        height: 140px;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .card-text {
+        padding: 15px;
+    }
+}
+
+.card-default {
+    height: 240px;
+
+    .card-image {
+        display: inline-block;
+        width: 50%;
+        height: inherit;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .card-body {
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+
+        .card-text {
+            padding: 15px;
+        }
+
+    }
+
+}
+
+.card-persona {
+    width: 100%;
+
+    .card-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        display: inline-block;
+        margin: 28px 22px;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        padding-top: 0px !important;
+        padding: 15px;
+    }
+
+    .card-data {
+        display: inline-block;
+    }
+}
+
+.card-vertical-small {
+    text-align: center;
+    width: 100%;
+
+    .card-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .card-text {
+        padding-top: 10px !important;
+        padding: 22px;
+    }
+
+    .card-data {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+}
+
+.card-persona-inverted {
+    text-align: center;
+    width: 100%;
+    height: auto;
+
+    .dialog {
+        background: #f5f2f2;
+        position: relative;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .dialog:after {
+        content: "";
+        position: absolute;
+        left: 45%;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #f5f2f2 transparent;
+        display: block;
+        width: 0;
+    }
+
+    .card-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin-top: 25px;
+        display: inline-block;
+    }
+
+    .card-text {
+        padding: 22px;
+    }
+
+    .card-data {
+        padding-bottom: 10px;
+    }
+}
+
+.card-default-small {
+    width: 100%;
+    height: auto;
+
+    .card-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        display: inline-block;
+        margin: 28px 22px;
+        position: absolute;
+        margin-bottom: 10px;
+    }
+
+    .card-body {
+        margin-left: 75px;
+        display: inline-block;
+        padding: 15px;
+        padding-bottom: 60px !important;
+    }
+}
+
+.name-card {
+    width: 150px;
+    background-color: white;
+    margin: 5px;
+    position: absolute;
+}
+
+.name-card p {
+    margin: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.default .name-card {
+    top: -42px;
+}
+
+.persona-inverted .name-card {
+    top: -64px
+}
+
+.persona .name-card {
+    top: -42px;
+    right: 0px;
+}
+
+.vertical-small .name-card {
+    bottom: 0px;
+    left: -160px;
+}
+
+.default-small .name-card {
+    right: 0px;
+}
