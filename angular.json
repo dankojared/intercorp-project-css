@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "maquetaFifi": {
+    "intercorp-project-css": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/maquetaFifi",
+            "outputPath": "dist/intercorp-project-css",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "maquetaFifi:build"
+            "browserTarget": "intercorp-project-css:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "maquetaFifi:build:production"
+              "browserTarget": "intercorp-project-css:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "maquetaFifi:build"
+            "browserTarget": "intercorp-project-css:build"
           }
         },
         "test": {
@@ -109,15 +109,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "maquetaFifi:serve"
+            "devServerTarget": "intercorp-project-css:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "maquetaFifi:serve:production"
+              "devServerTarget": "intercorp-project-css:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "maquetaFifi"
+  "defaultProject": "intercorp-project-css"
 }
