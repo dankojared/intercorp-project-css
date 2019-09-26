@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/intercorp-project-css",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
